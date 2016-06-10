@@ -1,14 +1,13 @@
 //creating the application module
 
-angular.module('amazingSales',["amazingSales.login",
-	"amazingSales.register",
-	"amazingSales.cart",
-	"amazingSales.home",
-	"amazingSales.gadget",
-	"amazingSales.common"]);
+angular.module("farmersMarket",["farmersMarket.register",
+	"farmersMarket.login",
+	"farmersMarket.home",
+	"farmersMarket.cart"
+	]);
 
 
-angular.module("amazingSales")
+angular.module("farmersMarket")
 	.config(function() {
 		console.log("i am the main module");
 	});

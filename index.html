@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="farmersMarket">
+	<head>
+		<title>FarmersMarket</title>
+		<meta charset='UTF-8'>
+		<link href="content/css/bootstrap.css" rel="stylesheet"></script>
+		<link href="content/css/bootstrap-theme.css" rel="stylesheet"></script>
+		<script src="vendor/jquery-2.2.0.js"></script>
+		<script src="vendor/bootstrap.js"></script>
+		<script src="vendor/angular.min.js"></script>
+
+
+	</head>
+	<body>
+		<div class="container" ng-controller="mainCtrl">
+			<div ng-include="navigationTemplate"></div>
+			<div ng-controller="homeCtrl">
+				<div class="col-xs-4">
+					<h1 ng-bind="title"></h1>
+					<input ng-model="name"></input>
+
+				</div>
+				<button class="btn btn-info" ng-click="cliclMe()">Click Me</button>
+			</div>
+
+
+		</div>	
+
+		<script src="app/main/mainCtrl.js"></script>
+
+		<script src="app/home/home.js"></script>
+		<script src="app/home/homeCtrl.js"></script>
+
+		<script src="app/register/register.js"></script>
+		<script src="app/login/login.js"></script>
+		<script src="app/cart/cart.js"></script>
+
+	
+		<script src="app/app.js"></script>
+
+	
+	</body>
+</html>
